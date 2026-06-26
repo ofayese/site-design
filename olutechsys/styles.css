@@ -59,11 +59,15 @@ img {
 .nav-logo picture {
   width: 44px;
   height: 44px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .footer-brand picture {
   width: 42px;
   height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 @keyframes otsPulse {
@@ -131,6 +135,7 @@ img {
   height: 44px;
   border-radius: 50%;
   border: 1.5px solid rgba(124, 58, 237, 0.55);
+  object-fit: cover;
 }
 
 .nav-wordmark {
@@ -582,14 +587,36 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .contact-grid,
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
   .hero-stats .stat-divider {
     display: none;
+  }
+
+  .hero-content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer-bar-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+
+  .section-heading {
+    font-size: clamp(1.6rem, 6vw, 2rem);
   }
 }
 
@@ -725,6 +752,7 @@ textarea.form-control {
 .hero-image {
   position: relative;
   width: 100%;
+  height: auto;
   border-radius: 22px;
   border: 1px solid rgba(124, 58, 237, 0.3);
   box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.8);
@@ -756,6 +784,7 @@ textarea.form-control {
 .labs-image {
   position: relative;
   width: 100%;
+  height: auto;
   border-radius: 20px;
   border: 1px solid rgba(6, 182, 212, 0.3);
   box-shadow: 0 32px 70px -28px rgba(6, 182, 212, 0.4);
@@ -938,8 +967,11 @@ textarea.form-control {
 }
 
 .footer-brand img {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: 1.5px solid rgba(124, 58, 237, 0.4);
+  object-fit: cover;
 }
 
 .footer-tagline {
