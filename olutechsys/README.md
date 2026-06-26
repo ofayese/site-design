@@ -48,11 +48,6 @@ Shared cross-site assets live in `../shared/` (base.css, nav.js, motion.js). Doc
    certbot --nginx -d olutechsys.com -d www.olutechsys.com
    ```
 
-## Reference repos (not deploy targets)
-
-- `../../olutech-site` — Next.js engineering copy patterns
-- `../../_logocoder/_swarm-output/cursor` — brand tokens and constellation mark
-
 ## Deployment options
 
 | Option | How |

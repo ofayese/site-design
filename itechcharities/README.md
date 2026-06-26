@@ -58,11 +58,6 @@ Shared cross-site assets: `../shared/` (Docker mounts parent `site_design/` for 
 - Contact form
 - Footer with social links
 
-## Reference repos
-
-- `../../itechdc-site` — Next.js program metadata and partnership copy
-- `../../_logocoder/_swarm-output/cursor` — constellation mark (green/gold variant)
-
 ## Running both sites together
 
 ```bash
