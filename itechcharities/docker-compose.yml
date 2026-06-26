@@ -1,0 +1,14 @@
+services:
+  itechcharities:
+    image: nginx:alpine
+    container_name: itechcharities
+    ports:
+      - "8081:80"
+    volumes:
+      - ../:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
+
+# Run:  docker compose up -d
+# Open: http://localhost:8081
+# Stop: docker compose down

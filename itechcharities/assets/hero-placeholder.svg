@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <defs>
+    <linearGradient id="idc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e3326"/>
+      <stop offset="100%" stop-color="#1c1f25"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="520" fill="url(#idc-bg)" rx="24"/>
+  <circle cx="460" cy="240" r="100" fill="#2e9c5f" opacity="0.2"/>
+  <rect x="200" y="120" width="520" height="280" rx="20" fill="#24282f" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="320" cy="280" r="48" fill="#e6c074" opacity="0.9"/>
+  <text x="320" y="288" text-anchor="middle" fill="#1c1f25" font-family="system-ui,sans-serif" font-size="22" font-weight="700">A+</text>
+  <text x="400" y="260" fill="#f1efe6" font-family="system-ui,sans-serif" font-size="24" font-weight="700">CompTIA-aligned training</text>
+  <text x="400" y="295" fill="#929891" font-family="system-ui,sans-serif" font-size="16">Replace with a real program photo when available</text>
+</svg>

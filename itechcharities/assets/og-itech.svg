@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1c1f25"/>
+  <circle cx="950" cy="280" r="260" fill="#2e9c5f" opacity="0.15"/>
+  <circle cx="180" cy="420" r="200" fill="#e6c074" opacity="0.1"/>
+  <text x="80" y="270" fill="#f5f3ec" font-family="system-ui,sans-serif" font-size="56" font-weight="800">ITECH Development Charities</text>
+  <text x="80" y="350" fill="#5cc585" font-family="system-ui,sans-serif" font-size="32">Empowering youth through IT education</text>
+</svg>

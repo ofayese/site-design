@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0f3a"/>
+      <stop offset="100%" stop-color="#0f0e2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="520" fill="url(#bg)" rx="24"/>
+  <circle cx="460" cy="260" r="120" fill="#7C3AED" opacity="0.15"/>
+  <circle cx="460" cy="260" r="8" fill="#7C3AED"/>
+  <circle cx="460" cy="160" r="6" fill="#7C3AED"/>
+  <circle cx="560" cy="260" r="6" fill="#F57C00"/>
+  <circle cx="460" cy="360" r="6" fill="#7C3AED"/>
+  <circle cx="360" cy="260" r="6" fill="#06B6D4"/>
+  <text x="460" y="430" text-anchor="middle" fill="rgba(237,233,225,0.5)" font-family="system-ui,sans-serif" font-size="18">Replace with olutech-yoruba.jpg when available</text>
+</svg>
