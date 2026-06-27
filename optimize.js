@@ -1,17 +1,23 @@
 /**
  * Temporary image optimizer — run once: npm i sharp && node optimize.js
- * Outputs WebP variants into olutechsys/assets/
+ * Outputs WebP variants into site asset directories.
  */
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const ASSETS = path.join(__dirname, "olutechsys", "assets");
+const DEFAULT_ASSETS_DIR = "olutechsys/assets";
 
 const JOBS = [
   { input: "olutech-final.png", output: "olutech-final.webp", width: 800 },
   { input: "olutech-dev-hub.png", output: "olutech-dev-hub.webp", width: 1200 },
   { input: "olutech-yoruba.jpg", output: "olutech-yoruba.webp", width: 1200 },
+  {
+    assetsDir: "itechcharities/assets",
+    input: "hero-students.png",
+    output: "hero-students.webp",
+    width: 920,
+  },
 ];
 
 function formatBytes(bytes) {
@@ -22,8 +28,9 @@ function formatBytes(bytes) {
 
 async function run() {
   for (const job of JOBS) {
-    const inputPath = path.join(ASSETS, job.input);
-    const outputPath = path.join(ASSETS, job.output);
+    const assetsDir = path.join(__dirname, job.assetsDir ?? DEFAULT_ASSETS_DIR);
+    const inputPath = path.join(assetsDir, job.input);
+    const outputPath = path.join(assetsDir, job.output);
 
     if (!fs.existsSync(inputPath)) {
       console.error(`Missing: ${inputPath}`);
