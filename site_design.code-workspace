@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../olutech-site"
+		},
+		{
+			"path": "../itechdc-site"
+		}
+	],
+	"settings": {}
+}
